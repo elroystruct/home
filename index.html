@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zócalo — Business funding, placed right</title>
+<style>
+  :root{
+    --ink:#111318;
+    --sub:#5b6270;
+    --line:#e2e6ee;
+    --tint:#f5f7fb;
+    --navy:#1f4a6b;
+    --sky:#8fbee8;
+    --copper:#b5762c;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    text-align:center;
+  }
+  a{color:var(--navy);text-decoration:none}
+  a:hover{text-decoration:underline}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+
+  .wrap{max-width:920px;margin:0 auto;padding:0 32px}
+
+  header{padding:36px 0 0;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .logo{width:30px;height:auto}
+  .word{font-size:16px;font-weight:600;letter-spacing:0.01em;color:var(--navy)}
+
+  .hero{padding:80px 0 64px}
+  h1{
+    font-size:clamp(32px,6vw,56px);
+    line-height:1.12;
+    letter-spacing:-0.02em;
+    font-weight:600;
+    margin:0 auto 22px;
+    max-width:16ch;
+  }
+  .lede{font-size:19px;color:var(--sub);max-width:44ch;margin:0 auto 34px}
+  .cta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+  .cta{
+    display:inline-block;
+    background:var(--navy);
+    color:#fff;
+    padding:12px 22px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:500;
+  }
+  .cta:hover{background:var(--copper);text-decoration:none;color:#fff}
+  .cta.ghost{
+    background:transparent;
+    color:var(--navy);
+    border:1px solid var(--line);
+  }
+  .cta.ghost:hover{background:var(--tint);color:var(--navy)}
+
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  h2{font-size:13px;font-weight:600;color:var(--sub);margin:0 0 36px;letter-spacing:0.02em}
+
+  .products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:36px;
+    text-align:left;
+  }
+  .product{padding-top:14px;border-top:2px solid var(--sky)}
+  .product h3{font-size:17px;font-weight:600;margin:0 0 6px}
+  .product p{font-size:15px;color:var(--sub);margin:0}
+
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    text-align:left;
+  }
+  .step .n{
+    font-size:13px;
+    color:var(--copper);
+    font-weight:600;
+    display:block;
+    margin-bottom:8px;
+  }
+  .step .t{font-weight:600;display:block;margin-bottom:4px;font-size:15px}
+  .step p{margin:0;font-size:14px;color:var(--sub)}
+
+  footer{padding:40px 0 56px}
+  footer p{font-size:13px;color:var(--sub);margin:0 0 6px}
+
+  @media (max-width:720px){
+    .products{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr;gap:32px 20px}
+  }
+  @media (max-width:480px){
+    .hero{padding:56px 0 44px}
+    .steps{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <img class="logo" src="logo.png" alt="Zócalo">
+    <div class="word">zócalo</div>
+  </header>
+
+  <div class="hero">
+    <h1>Capital, matched to the business.</h1>
+    <p class="lede">We place working capital, equipment, and short term funding with the right lender, fast, without the runaround of a bank.</p>
+    <div class="cta-row">
+      <a class="cta" href="tel:+13865642601">Call +1 386 564 2601</a>
+      <a class="cta ghost" href="mailto:hello@zocalo.today">Email us</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>What we place</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Working capital</h3>
+        <p>Revenue based advances for businesses that need cash now, payroll, inventory, or an opportunity that won't wait.</p>
+      </div>
+      <div class="product">
+        <h3>Short term loans</h3>
+        <p>Fixed payments, fixed term. A straightforward option when a lump sum makes more sense than a draw.</p>
+      </div>
+      <div class="product">
+        <h3>Equipment &amp; repair</h3>
+        <p>Funding tied to a specific purchase or repair, so the equipment itself carries the cost of getting it running.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><span class="t">Tell us what you need</span><p>A few details on the business and the funding gap.</p></div>
+      <div class="step"><span class="n">2</span><span class="t">We shop it</span><p>Your file goes to lenders who actually fund your profile.</p></div>
+      <div class="step"><span class="n">3</span><span class="t">You pick the offer</span><p>Real terms, laid out plainly, and you choose.</p></div>
+      <div class="step"><span class="n">4</span><span class="t">Funded</span><p>Most deals close in days, not months.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Zócalo . business funding placement</p>
+    <p><a href="mailto:hello@zocalo.today">hello@zocalo.today</a> &nbsp;·&nbsp; <a href="tel:+13865642601">+1 386 564 2601</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
